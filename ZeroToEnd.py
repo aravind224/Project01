@@ -1,4 +1,15 @@
 def MoveZerosToEnd(arr, n):
+    """
+    Moves all zero values in the array to the end,
+    while maintaining the order of non-zero elements.
+
+    Parameters:
+    arr (list): List of integers
+    n (int): Length of the list
+
+    Returns:
+    list: Updated list with zeros moved to the end
+    """
     j = -1
     for i in range(0, n):
         if arr[i] == 0:
@@ -14,6 +25,7 @@ def MoveZerosToEnd(arr, n):
             j += 1
 
     return arr
+
 
 
 # This part runs ONLY when you manually run the file
